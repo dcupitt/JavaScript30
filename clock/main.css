@@ -44,3 +44,12 @@ body {
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.18, 0.38, 0.76, 1.88);
 }
+
+.hour-hand {
+  width: 30%;
+  left: 20%;
+}
+
+.second-hand {
+  opacity: 0.6;
+}
