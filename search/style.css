@@ -8,6 +8,7 @@
     *, *:before, *:after {
       box-sizing: inherit;
     }
+
     input {
       width: 100%;
       padding:20px;
@@ -33,15 +34,15 @@
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
     }
 
-
     .suggestions {
       margin: 0;
       padding: 0;
       position: relative;
       /*perspective:20px;*/
     }
+
     .suggestions li {
-      background:white;
+      background: white;
       list-style: none;
       border-bottom: 1px solid #D8D8D8;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);

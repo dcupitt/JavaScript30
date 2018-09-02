@@ -39,23 +39,7 @@
     <h1>ADVENTURE</h1>
   </div>
 
-  <script>
-
-  const panels = document.querySelectorAll('.panel')
-  // const panelsChildren = panels.querySelector()
-  function toggleOpen () {
-    this.classList.toggle('open');
-  }
-  function transWords (e) {
-    if (e.propertyName.includes('flex')) {
-      this.classList.toggle('open-active')
-    }
-  }
-
-  panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-  panels.forEach(panel => panel.addEventListener('transitionend', transWords));
-
-  </script>
+  <script src="panel.js" type="text/javascript"></script>
 
 </body>
 </html>
