@@ -23,18 +23,17 @@ body {
   transition: transform 0.5s;
 }
 
-body.fixed-nav .site-wrap {
+.fixed-nav .site-wrap {
   transform: scale(1);
 }
 
-
 header {
   text-align: center;
-  height:50vh;
-  background:url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat;
-  background-size:cover;
-  display:flex;
-  align-items:center;
+  height: 50vh;
+  background: url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -46,27 +45,28 @@ h1 {
 
 nav {
   background:black;
-  top:0;
+  top: 0;
   width: 100%;
-  transition:all 0.5s;
+  transition: all 0.5s;
   position: relative;
   z-index: 1;
 }
 
-body.fixed-nav nav {
+.fixed-nav nav {
   position: fixed;
-  box-shadow:0 5px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
   margin: 0;
-  padding:0;
+  padding: 0;
   list-style: none;
-  display:flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav li {
-  flex:1;
+  flex: 1;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -82,12 +82,13 @@ li.logo {
   font-size: 30px;
 }
 
-li.logo a {
-  color:black;
+.fixed-nav li.logo {
+  max-width: 500px;
+  overflow: visible;
 }
 
-.fixed-nav li.logo {
-  max-width:500px;
+li.logo a {
+  color:black;
 }
 
 nav a {

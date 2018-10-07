@@ -40,23 +40,21 @@
 <button></button>
 <script>
   const divs = document.querySelectorAll('div');
-  const button = document.querySelector('button');
 
-  function logText(e) {
+  function logText (e) {
     console.log(this.classList.value);
-    // e.stopPropagation(); // stop bubbling!
-    // console.log(this);
+    e.stopPropagation(); // stop bubbling!
   }
 
   divs.forEach(div => div.addEventListener('click', logText, {
     capture: false,
-    once: true
+    once: true // allows click event to only happen ONCE
   }));
 
   button.addEventListener('click', () => {
     console.log('Click!!!');
   }, {
-    once: true
+    once: true // allows click event to only happen ONCE
   });
 
 </script>
